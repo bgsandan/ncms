@@ -1,8 +1,13 @@
 backend:
   name: github
   repo: bgsandan/BritishGeologicalSurvey.github.io # Path to your GitHub repository
+  open_authoring: true
 media_folder: assets/images
+public_folder: '/BritishGeologicalSurvey.github.io/assets/images'
+site_url: 'https://bgsandan.github.io/BritishGeologicalSurvey.github.io/'
 logo_url: 'https://www.bgs.ac.uk/images/bgs-colour-logo.svg'
+show_preview_links: true
+publish_mode: editorial_workflow
 collections:
   -
     name: blog
@@ -40,6 +45,7 @@ collections:
     label: Authors
     name: authors
     folder: '_data/authors'
+    format: 'yml'
     identifier_field: name
     create: true
     editor:
